@@ -1,0 +1,299 @@
+ <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            *{
+                margin: 0px;
+            }
+          body {
+            background: #fff;
+            color: 333;
+          }
+          .menu{
+            background-color: blue;
+            color: white;
+            line-height: 35px;
+          }
+          .menu span{
+            margin-left: 30px;
+          }
+          .menu-mobile{
+            background-color: blue;
+            display: block;
+          }
+          .menu-mobile img{
+            margin: 10px;
+          }
+          .area{
+            background-color: white;
+          }
+
+
+
+
+          body{
+    width: 100%;
+}
+
+.box{
+    width: 35%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin-left: 1%;
+    background-color: white;
+    margin-top: 2%;
+    
+}   
+
+.box img{
+    width: 100%;
+    border-radius: 10px;
+    
+   
+}
+.hop{
+    display: flex;
+    justify-content: space-around;
+   
+    flex-direction: row;
+    margin-left: 2%;
+    margin-right: 4%;
+   
+}
+
+.h3{
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .row{
+            flex-wrap: wrap;
+            display: flex;
+
+        }
+        .column{
+            padding: 0px 4px;
+            flex-basis: 25%;
+            max-width: 24%;
+        }
+        .column img{
+            margin-top: 8px;
+            margin: 0px;
+           
+        }
+
+
+          /* Điện thoại dọc */
+          @media all and (max-width: 576px) {
+            body {
+              background: red;
+            }
+            
+            .menu{
+                display: none;
+            }
+          
+    .box{
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      
+      
+    }
+   
+    .hop{
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0px;
+    margin-left: 0px;
+    margin-right: 1.2%;
+    }
+    .column{
+                flex-basis: 100%;
+                max-width: 95%;
+            }
+            .column img{
+               width: 80%;
+               margin-left: 2%;
+               margin-right: 4%;
+            }
+        }
+        .row{
+          margin-top: 2%;
+          margin-left: 0px;
+        }
+          /* Điện thoại ngang */
+          @media all and (min-width: 576px) {
+            body {
+              background: pink;
+            }
+            .menu-mobile{
+                display: none;
+            }
+            .area{
+                margin-left: 40px;
+                margin-right: 40px;
+                font-size: 30px;
+               
+            }
+            .banner{
+                width: 100%;
+            }
+            .box{
+      width: 48%;
+      margin: 0px;
+      
+    }
+            .hop{
+              margin-left: 0px;
+              margin-right: 0px;
+              padding: 0px;
+      flex-wrap: wrap;
+          flex-direction: row;
+    }
+    .column{
+                flex-basis: 50%;
+                max-width: 48%;
+            }
+
+            .row{
+              margin-top: 20px;
+              margin-left: 2%;
+            }
+          }
+          /* Máy tính bảng */
+          @media all and (min-width: 768px) {
+            body {
+              background: green;
+            }
+            .hop{
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 0px;
+    }
+    .column{
+                flex-basis: 50%;
+                max-width: 48%;
+            }
+
+            .row{
+              margin-top: 20px;
+              margin-left: 2%;
+            }
+    
+          }
+          /* màn hình máy tính */
+          @media all and (min-width: 992px) {
+            body {
+              background: yellow;
+            }
+            .box{
+              width: 50%;
+              margin: 0px;
+              
+            }
+            .hop{
+              margin-left: 0px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    }
+
+    .column{
+           
+           flex-basis: 25%;
+           max-width: 24%;
+        
+           
+       }
+       
+       .row{
+           
+           margin-left: 1%;
+       }
+
+
+          }
+        </style>
+      </head>
+      <body>
+        <img src="logo (1).png" width="150px">
+        <div class="menu">
+            <span>Trang chủ</span>
+            <span>Giới thiệu</span>
+            <span>Du lịch trong nước</span>
+            <span>Du lịch ngoài nước</span>
+            <span>Tin tức</span>
+            <span>Liên hệ</span>
+        </div>
+        <div class="menu-mobile">
+            <img src="hinh3.jpg" width="35px">
+        </div>
+        <img class="banner" src="hinh1.jpg" width="100%">
+        <div class="area" > 
+            <p>Học sinh lớp 12 tại TP.HCM vừa trải qua kỳ thi học sinh giỏi cấp TP. Chủ đề cũng như hình thức ra đề thi môn ngữ văn của Sở </p>
+            <p>Học sinh lớp 12 tại TP.HCM vừa trải qua kỳ thi học sinh giỏi cấp TP. Chủ đề cũng như hình thức ra đề thi môn ngữ văn của Sở </p>
+            <p>Học sinh lớp 12 tại TP.HCM vừa trải qua kỳ thi học sinh giỏi cấp TP. Chủ đề cũng như hình thức ra đề thi môn ngữ văn của Sở </p>
+            <p>Học sinh lớp 12 tại TP.HCM vừa trải qua kỳ thi học sinh giỏi cấp TP. Chủ đề cũng như hình thức ra đề thi môn ngữ văn của Sở </p>
+            <p>Học sinh lớp 12 tại TP.HCM vừa trải qua kỳ thi học sinh giỏi cấp TP. Chủ đề cũng như hình thức ra đề thi môn ngữ văn của Sở </p>
+            
+        </div>
+        <div class="hop">
+          <div class="box"> <img src="/web106/Bai 3/z4177777138174_d706d30e7e414d229047cd435c62f6e1.jpg " alt="">
+              <div>Ve cap treo Sun world Ba Den Moutian o tay ninh</div>
+              <br>
+              <div class="h3"> tu d 240,000</div>
+          </div>
+          
+          <div class="box"> <img src="/web106/Bai 3/b3.jpg" alt="">
+              <div>Du thuyen sai gon voi bua toi Tren tau saigon princess</div>
+              <br>
+              <div class="h3"> tu d 640,000 </div>
+          </div>
+          
+          <div class="box"> <img src="/web106/Bai 3/b3.jpg" alt="">
+              <div>ve a o show o nha hat thanh pho</div>
+              <br>
+              <div class="h3"> tu d 700,000 </div>
+          </div>
+      
+          <div class="box"> <img src="/web106/Bai 3/z4177777138174_d706d30e7e414d229047cd435c62f6e1.jpg" alt="">
+              <div> Tour tham quan dia dao cu chi va dong bang song cuu long</div>
+              <br>
+              <div class="h3"> tu d 1,240,000 </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="column">
+            <img src="https://picsum.photos/id/103/400/300" style="width: 100%;" >
+            <img src="https://picsum.photos/id/1003/300/400" style="width: 100%;" >
+            <img src="https://picsum.photos/id/829/300/280" style="width: 100%;">  
+            <img src="https://picsum.photos/id/90/300/200" style="width: 100%;">
+        </div>
+        <div class="column">
+            <img src="https://picsum.photos/id/90/300/200" style="width: 100%;">
+            <img src="https://picsum.photos/id/100/300/150"  style="width: 100%;">
+            <img src="https://picsum.photos/id/61/300/280" style="width: 100%;">
+            <img src="https://picsum.photos/id/23/300/400"  style="width: 100%;">
+            
+        </div>
+        <div class="column">
+            <img src="https://picsum.photos/id/13/400/300"style="width: 100%;" >
+            <img src="https://picsum.photos/id/43/300/380" style="width: 100%;">
+            <img src="https://picsum.photos/id/54/300/280" style="width: 100%;">
+            <img src="https://picsum.photos/id/76/300/150"  style="width: 100%;">
+        </div>
+        <div class="column">
+            <img src="https://picsum.photos/id/76/300/150"  style="width: 100%;">
+            <img src="https://picsum.photos/id/56/400/300" style="width: 100%;">
+            <img src="https://picsum.photos/id/783/300/300"  style="width: 100%;">
+            <img src="https://picsum.photos/id/72/300/200" style="width: 100%;">
+            <img src="https://picsum.photos/id/161/300/150"  style="width: 100%;">
+        </div>
+    </div>
+      </body>
+    </html>

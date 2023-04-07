@@ -1,0 +1,79 @@
+body{
+    background-color: blueviolet;
+
+}
+.menu{
+    background-color: brown;
+    color: white;
+    height: 30px;
+}
+.menu span{
+    margin-left: 30px ;
+}
+
+.menumobile{
+    background-color: brown;
+    display: block;
+    height: 40px;
+}
+
+.menumobile img{
+    margin-left: 10px;
+}
+
+.area{
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.cla{
+    margin: 0px;
+}
+/* dt mang hinh doc   */
+@media all and (max-width: 576px){
+ body{
+    background-color: red;
+ }
+ .banner{
+    width: 150%;
+ }
+ .menu{
+    display: none;
+ }
+ 
+}
+    /* Điện thoại ngang */
+
+@media all and (min-width: 576px    ){
+    body{
+        background-color: blue;
+    }
+    .menu{
+        display: none;
+    }
+    
+}
+
+
+/* Máy tính bảng */
+
+@media all and (min-width: 768px    ){
+    body{
+        background-color: gold;
+    }
+    .menumobile{
+        display: none;
+    }
+}
+
+/* Máy tính */
+
+@media all and (min-width: 992px    ){
+    body{
+        background-color: black;
+       
+    }
+}
